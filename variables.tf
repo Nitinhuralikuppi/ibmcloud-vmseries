@@ -12,8 +12,8 @@
 # image_name - The name of the Palo Alto VM-Series (PanOS) image . Valid values are "pa-vm-kvm-9-1-3-1"
 ##############################################################################
  variable "image_name" {
-   default     = "pa-vm-kvm-10-0-6"
-   description = "The name of the VM-series image to be installed. Valid values are pa-vm-kvm-9-1-3-1 and pa-vm-kvm-10-0-6"
+   default     = "pa-vm-kvm-9-1-3-1"
+   description = "The name of the VM-series image to be installed."
  }
 ##############################################################################
 # subnet_ids - Subnet where resources are to be provisioned.
@@ -71,9 +71,9 @@ variable "region" {
 # It is not needed while testing from Schematics
 ######################################################################################################
 
-#variable "api_key" {
- # description = "Holds the User API key to authenticate with IBM Cloud Account"
-#}
+variable "api_key" {
+  description = "Holds the User API key to authenticate with IBM Cloud Account"
+}
 
 ##############################################################################
 # vnf_securtiy_group - The security group to which the first VSI interface(management) belongs to.
