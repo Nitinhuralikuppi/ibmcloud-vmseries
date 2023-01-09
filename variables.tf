@@ -26,9 +26,9 @@ variable "subnet_id2"{
   description = "The id of the subnet to which VM-Series VSI's second interface(dataplane) belongs to"
 }
 
-# variable "subnet_id3"{
-#  description = "The id of the subnet to which VM-Series VSI's third interface(trust) belongs to"
-#}
+variable "subnet_id3"{
+  description = "The id of the subnet to which VM-Series VSI's third interface(trust) belongs to"
+}
 
 ##############################################################################
 # ssh_key_name - The name of the public SSH key to be used when provisining VM-Series VSI.
