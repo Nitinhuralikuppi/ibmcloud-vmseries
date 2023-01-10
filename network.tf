@@ -15,3 +15,7 @@ data "ibm_is_subnet" "vnf_subnet2"{
 data "ibm_is_subnet" "vnf_subnet3"{
    identifier = var.subnet_id3
 }
+
+data "ibm_is_subnet" "vnf_subnet4"{
+   identifier = var.subnet_id4
+}
