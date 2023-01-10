@@ -12,7 +12,6 @@ https://www.paloaltonetworks.com
 
 ## Version
 PAN-OS 9.1.3
-PAN-OS 10.0.6
 
 Follow the standard upgrade process after the VM-series in installed if a newer release is required.
 
@@ -21,8 +20,6 @@ Follow the standard upgrade process after the VM-series in installed if a newer 
 
 ## License Requirements
 The VM-Series on IBM Cloud supports bring-your-own-license (BYOL) as a licensing model. You can purchase your VM-Series license through normal Palo Alto Networks channels, and then deploy the VM-Series using the license authorization code you received. 
-https://docs.paloaltonetworks.com/vm-series/10-0/vm-series-deployment/license-the-vm-series-firewall/vm-series-models/license-typesvm-series-firewalls
-
 https://docs.paloaltonetworks.com/vm-series/9-1/vm-series-deployment/license-the-vm-series-firewall.html
 
 ## Prerequisites
