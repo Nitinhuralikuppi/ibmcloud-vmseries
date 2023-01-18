@@ -85,10 +85,10 @@ resource "ibm_is_instance" "vnf_vsi" {
    subnet = data.ibm_is_subnet.vnf_subnet3.id
   }
 
-  network_interfaces {
-   name   = "eth3"
-   subnet = data.ibm_is_subnet.vnf_subnet4.id
-  }
+  #network_interfaces {
+  # name   = "eth3"
+  # subnet = data.ibm_is_subnet.vnf_subnet4.id
+  #}
 
   vpc  = data.ibm_is_subnet.vnf_subnet1.vpc
   zone = data.ibm_is_subnet.vnf_subnet1.zone
