@@ -30,9 +30,9 @@ variable "subnet_id3"{
   description = "The id of the subnet to which VM-Series VSI's third interface(trust) belongs to"
 }
 
-variable "subnet_id4"{
-  description = "The id of the subnet to which VM-Series VSI's forth interface(DMZ) belongs to"
-}
+#variable "subnet_id4"{
+#  description = "The id of the subnet to which VM-Series VSI's forth interface(DMZ) belongs to"
+#}
 
 ##############################################################################
 # ssh_key_name - The name of the public SSH key to be used when provisining VM-Series VSI.
