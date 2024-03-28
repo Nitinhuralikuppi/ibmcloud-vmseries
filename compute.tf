@@ -59,6 +59,16 @@ resource "ibm_is_security_group_rule" "vnf_sg_rule_out_all" {
   remote    = "0.0.0.0/0"
 }
 
+resource "ibm_is_floating_ip" "publicip" {
+  name   = "${var.vnf_instance_name}-publicip-${random_string.random_suffix.result}"
+  target = ibm_is_instance.vnf_vsi.network_interfaces[1].id
+}
+
+resource "ibm_is_floating_ip" "publicip" {
+  name   = "${var.vnf_instance_name}-publicip-${random_string.random_suffix.result}"
+  target = ibm_is_instance.vnf_vsi.primary_network_interface[0].id
+}
+
 //vnf instance 
 resource "ibm_is_instance" "vnf_vsi" {
   depends_on = [ibm_is_security_group_rule.vnf_sg_rule_out_all]
