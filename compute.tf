@@ -60,12 +60,12 @@ resource "ibm_is_security_group_rule" "vnf_sg_rule_out_all" {
 }
 
 resource "ibm_is_floating_ip" "publicip_1" {
-  name   = "${var.vnf_instance_name}-publicip-${random_string.random_suffix.result}"
+  name   = "${var.vnf_instance_name}-publicip-${substr(random_uuid.test.result,0,8)}"
   target = ibm_is_instance.vnf_vsi.network_interfaces[1].id
 }
 
 resource "ibm_is_floating_ip" "publicip_2" {
-  name   = "${var.vnf_instance_name}-publicip-${random_string.random_suffix.result}"
+  name   = "${var.vnf_instance_name}-publicip-${substr(random_uuid.test.result,0,8)}"
   target = ibm_is_instance.vnf_vsi.primary_network_interface[0].id
 }
 
